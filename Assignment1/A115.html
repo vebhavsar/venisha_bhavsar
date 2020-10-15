@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+
+  </head>
+
+  <body>
+    <p id = "demo"></p>
+
+    <input type="text" placeholder="Enter user name" id="myInput"><br>
+    <input type="number" placeholder="Emter contact number" id="myInput2"><br>
+    <button type="button" onclick="getInputValue();">Submit</button><br>
+
+    <script>
+        //document.getElementById("demo").innerHTML = myFunction();
+
+
+        function myFunction(){
+
+            var table = document.getElementById("mytable");
+            var row = table.insertRow();
+            var C1 = row.insertCell(0);
+            var C2 = row.insertCell(1);
+            C1.innerHTML = document.getElementById("myinput").value;
+            C2.innerHTML = document.getElementById("myinput2").value;
+        }
+    </script>
+    
+    
+    
+    
+    
+</body>
+
+
+</html>
