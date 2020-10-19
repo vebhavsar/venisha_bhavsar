@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+ </head>   
+<body>
+
+  <h2>JavaScript Functions</h2>
+
+  <p> Write a function that will return the longest word in a sentence. In cases where more than
+    one word is found, return the first one. Use the Split method..</p>
+
+  <p id="demo"> </p>
+
+  <script>
+    function myFunction() {
+      var str = " How are you doing ";
+      var res = str.split(" ");
+      
+      var long = res[0];
+      for(i=0;i<res.length;i++){
+          if (long.length < res[i].length){
+              long = res[i];
+          }
+      }
+      return long;
+    }
+      document.getElementById("demo").innerHTML = myFunction();
+
+      
+  </script>
+   
+</body>
+</html>

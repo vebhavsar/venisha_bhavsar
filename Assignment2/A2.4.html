@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+
+ </head>   
+<body>
+
+  <h2>JavaScript Functions</h2>
+
+  
+
+  <p id="demo"> </p>
+  <p>Create the function that takes an array with objects and returns the sum of people's
+    budgets. Use the reduce method.</p>
+  <button onclick="myFunction()">Try it</button>
+<script>
+      
+        var getBudgets = [
+        { name: "John", age: 21, budget: 23000 },
+        { name: "Steve", age: 32, budget: 40000 },
+        { name: "Martin", age: 16, budget: 2700 }];
+        
+     
+        document.getElementById("demo").innerHTML = getBudgets.reduce(myFunction);
+        
+        function myFunction(total, getBudgets.budget) {
+          return total + getBudgets.budget;
+
+  
+}
+
+
+    
+
+
+    
+</script>
+   
+</body>
+</html>

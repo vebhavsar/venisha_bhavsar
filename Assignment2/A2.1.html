@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+ </head>   
+<body>
+
+  <h2>JavaScript Functions</h2>
+
+  <p>This function will take two arguments and returns the multiples of the number of an array</p>
+
+  <p id="demo"> </p>
+
+  <script>
+    function myFunction(num,len) {
+        var myarray = [];
+        for(i = 0; i<len-1,i++ ){
+          var x = num * i;
+          var y = myarray.push(x);
+          
+      
+      console.log(y) ;
+        }
+    }
+    document.getElementById("demo").innerHTML = myFunction(7,5); 
+  </script>
+   
+</body>
+</html>

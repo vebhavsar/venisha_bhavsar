@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+ </head>   
+<body>
+
+  <h2>JavaScript Functions</h2>
+
+  <p>Create a function which returns the ordered string.</p>
+   <button onclick="myFunction('Hello everyone I am a fresher')">Click</button>
+  <p id="demo"> </p>
+
+  <script>
+   function myFunction(str) {
+    
+                var arr;
+                arr=str.split(" ");
+                arr.sort(function (a,b){return a.length - b.length});
+                txt = " "
+                txt=arr.toString();
+                txt=txt.replace(/,/g, " ");
+                document.getElementById('demo').innerHTML= txt;
+               
+          
+      
+
+   }
+
+</script>
+   
+</body>
+</html>
