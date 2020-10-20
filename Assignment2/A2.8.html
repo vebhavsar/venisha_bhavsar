@@ -12,38 +12,36 @@
   <p id="demo"> </p>
 
   <script>
+    var movie =  [
+                     { 'name' : 'Baaghi', 'duration' : 120 },
+                     {'name' : 'Panga', 'duration' : 60 },
+                     {'name' : 'Drive', 'duration' : 240 }
+                  ];
   class clMovie{
       constructor(self){
           this.self = self;
         }
        
         calculateDuration(x){
-           var sum = x.reduce(function(a, b){return a.duration - b.duration};
-           function myFunc(total, num) {
-            return total + num;
-           }
-
-        } 
-    
-        getAllName(x){
-            var str = [ ];
-            for (i = 0;i<x.length;i++){
-              str.push(x[i]);
-              document.getElementById("demo").innerhtml = str;
-
-            }
-
-
-
+           var sum = x.reduce((a, b) => a + b.duration,0);
+           console.log(sum);
         }
+
+       
+    
+        getAllName(str){
+            var aname = str.reduce((total,value) => value.name.foreach(aname => {total.push(aname);})
+            return total;
+
+          }
+       
+              
+              
+            
     
     
      
-     var movie =  [
-                     { 'name' : 'Baaghi', 'duration' : 120 },
-                     {'name' : 'Panga', 'duration' : 60 },
-                     {'name' : 'Drive', 'duration' : 240 }
-                  ];
+     
 
   }
 

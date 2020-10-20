@@ -12,13 +12,13 @@
   <p id="demo"> </p>
 
   <script>
-    var myarray = [true,false,true,false,true];
+    var myarray = [true,false,true,false,true,true];
     var newarr =[];
     function myFunction() {
       for (i=0;i< myarray.length;i++){
-        if (i == true){
+        if (myarray[i] == true){
           newarr.push(i);
-          continue;
+          
         }
 
       }

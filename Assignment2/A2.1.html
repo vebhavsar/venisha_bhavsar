@@ -7,22 +7,21 @@
 
   <h2>JavaScript Functions</h2>
 
-  <p>This function will take two arguments and returns the multiples of the number of an array</p>
-
-  <p id="demo"> </p>
+  <p id="demo"></p>
 
   <script>
-    function myFunction(num,len) {
-        var myarray = [];
-        for(i = 0; i<len-1,i++ ){
-          var x = num * i;
-          var y = myarray.push(x);
-          
-      
-      console.log(y) ;
-        }
-    }
-    document.getElementById("demo").innerHTML = myFunction(7,5); 
+  document.getElementById("demo").innerhtml = Multiple(5,7);
+  function Multiple(num , len)
+            {
+                var arr=[];
+                 for(i=1;i<=len;i++)
+                 {
+                   let mul=num*i;
+                   arr.push(mul);
+                 }
+                 //console.log(typeof(arr))
+                 document.getElementById('demo').innerHTML="Output: "+ arr;
+            }
   </script>
    
 </body>

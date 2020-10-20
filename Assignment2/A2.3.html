@@ -8,24 +8,25 @@
 
   <h2>JavaScript Functions</h2>
 
-  <p> given a string of words. You need to find the word "Best", and return a string like this:
-    "I found Best at [the order of the word you find Best]!".</p>
-
+  <p> given a string of words. You need to find the word "Best"!".</p>
+ <button onclick="findword('You will get the best ') "> Run Here</button>
   <p id="demo"> </p>
 
   <script>
-    str = "Where I can find the best";
-    var pos = str.indexOf("best");
-    if (pos =! 0) {
+    function findword(str){
+      var pos = str.indexOf("best");
+    if (pos > -1) {
+      pos  += 1;
       output = "I found the best at" + pos;
+    }
 
     else {
       output = "I can't find best";
     }
     
-    document.getElementById("demo").innerHTML = output ; 
+    document.getElementById("demo").innerHTML = pos ; 
     
-
+  }
 
     
   </script>
