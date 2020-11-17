@@ -12,37 +12,38 @@
   <p id="demo"> </p>
 
   <script>
-    var movie =  [
-                     { 'name' : 'Baaghi', 'duration' : 120 },
-                     {'name' : 'Panga', 'duration' : 60 },
-                     {'name' : 'Drive', 'duration' : 240 }
-                  ];
-  class clMovie{
-      constructor(self){
+    
+  class clMovie
+    {
+      constructor(self)
+        {
           this.self = self;
         }
        
-        calculateDuration(x){
+        calculateDuration(x)
+        {
            var sum = x.reduce((a, b) => a + b.duration,0);
            console.log(sum);
         }
 
        
     
-        getAllName(str){
-            var aname = str.reduce((total,value) => value.name.foreach(aname => {total.push(aname);})
-            return total;
-
-          }
-       
-              
-              
+        getAllName(str)
+        {
             
-    
-    
-     
-     
+            var newname = str.map((item ) => {
+              return `${item.name};})`
+            });
+            console.log(newname);
+            document.getElementById('demo').innerHTML = newname;
+        }  
 
+        var movie =  [
+                     { 'name' : 'Baaghi', 'duration' : 120 },
+                     {'name' : 'Panga', 'duration' : 60 },
+                     {'name' : 'Drive', 'duration' : 240 }
+                  ];   
+              
   }
 
   obj = clMovie();

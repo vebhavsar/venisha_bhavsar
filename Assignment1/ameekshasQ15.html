@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<Label for="username">Username</Label>
+<input type="text" name="username" id="user">
+<br><br>
+<Label for="contact">Contact Number</Label>
+<input type="text" name="contact" id="num">
+<br><br>
+<button type="button" onclick="myFunction()">Submit</button>
+<br><br>
+<table id="myTable">
+    <tr>
+        <th>Username</th>
+        <th>Contact Number</th>
+    </tr>
+</table>
+<br>
+
+
+<script>
+function myFunction() 
+{
+  var table = document.getElementById("myTable");
+  var row = table.insertRow();
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = document.getElementById("user").value;
+  cell2.innerHTML = document.getElementById("num").value;
+}
+</script>
+
+</body>
+</html>
